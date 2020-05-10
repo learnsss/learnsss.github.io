@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Posts on 书为心印</title>
-    <link>https://learnsss.github.io/posts/</link>
-    <description>Recent content in Posts on 书为心印</description>
+    <title>随笔 on 书为心印</title>
+    <link>https://learnsss.github.io/tags/%E9%9A%8F%E7%AC%94/</link>
+    <description>Recent content in 随笔 on 书为心印</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
     <lastBuildDate>Wed, 11 Mar 2020 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="https://learnsss.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://learnsss.github.io/tags/%E9%9A%8F%E7%AC%94/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
@@ -18,15 +18,6 @@
       
       <guid>https://learnsss.github.io/posts/theme-preview/</guid>
       <description>$~~~~~~~~$当太阳照耀海面的时候，我们总会记起陪我们一起走过海边的人；当树枝在空中飘荡的时候，我们也会想起学伴时期的窗外；当朦胧的月光散在泉水上时，我们就会奔出想念的的身影；当我们漫步在宁静的</description>
-    </item>
-    
-    <item>
-      <title>《One Day》</title>
-      <link>https://learnsss.github.io/posts/theme-preview/</link>
-      <pubDate>Fri, 07 Sep 2018 00:00:00 +0000</pubDate>
-      
-      <guid>https://learnsss.github.io/posts/theme-preview/</guid>
-      <description>​ 日子是做什么的？ 日子是我们的住所。 他们来临，唤醒我们， 一次接着一次。 日子是该快乐度过的， 日子之外，哪里还有我们的生活之处？ ----菲利普的.拉金 $~~~~~~~~$休闲之余花三天时间读完了大卫尼克斯</description>
     </item>
     
   </channel>
