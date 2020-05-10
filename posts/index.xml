@@ -6,10 +6,19 @@
     <description>Recent content in Posts on 书为心印</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Wed, 11 Mar 2020 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 10 May 2020 21:14:14 +0800</lastBuildDate>
     
 	<atom:link href="https://learnsss.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>hugo 新建上传博客</title>
+      <link>https://learnsss.github.io/posts/new/</link>
+      <pubDate>Sun, 10 May 2020 21:14:14 +0800</pubDate>
+      
+      <guid>https://learnsss.github.io/posts/new/</guid>
+      <description>新建博文 hugo new posts/newblog.md 打开新建的newblog.md，编辑blog内容。 md编辑器我推荐用Typora，界面简单美观，还挺好用的。 检查内容 cd 到blog根目录，然后输入以下命令： hugo server -D 更新public静态页面 先</description>
+    </item>
     
     <item>
       <title>忆与遗</title>
