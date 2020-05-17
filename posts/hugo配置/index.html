@@ -10,7 +10,7 @@
         content="Zeuk"/>
 
   
-  <meta name="description" content="新建博文 hugo new posts/newblog.md 打开新建的newblog.md，编辑blog内容。 检查内容 cd 到blog根目录，然后输入以下命令： hugo server -D 更新public静态页面 先cd到blog根目录，然后输入以下命令： hugo -D 推送更新内容 c"/>
+  <meta name="description" content="安装hogo 去https://github.com/gohugoio/hugo/releases?after=v0.55.6下载适合的版本 安装完成后cmd输入hugo version来验证hugo版本 添"/>
   
 
   
@@ -19,11 +19,11 @@
   
 
   
-  <link rel="canonical" href="https://learnsss.github.io/posts/new/"/>
+  <link rel="canonical" href="https://learnsss.github.io/posts/hugo%E9%85%8D%E7%BD%AE/"/>
 
   
 
-  <title>hugo 新建上传博客 &middot; 书为心印</title>
+  <title>Hugo配置 &middot; 书为心印</title>
 
   <link rel="shortcut icon" href="https://learnsss.github.io/images/favicon.ico"/>
   <link rel="stylesheet" href="https://learnsss.github.io/css/animate.min.css"/>
@@ -108,55 +108,68 @@
     <div class="post_page">
       <div class="post animated fadeInDown">
         <div class="post_title post_detail_title">
-          <h2><a href='/posts/new/'>hugo 新建上传博客</a></h2>
-          <span class="date">2020.05.10</span>
+          <h2><a href='/posts/hugo%E9%85%8D%E7%BD%AE/'>Hugo配置</a></h2>
+          <span class="date">2020.05.17</span>
         </div>
         <div class="post_content markdown">
 
-<h2 id="新建博文">新建博文</h2>
+<h2 id="安装hogo">安装hogo</h2>
 
-<pre><code>hugo new posts/newblog.md
+<p>去<a href="https://github.com/gohugoio/hugo/releases?after=v0.55.6下载适合的版本">https://github.com/gohugoio/hugo/releases?after=v0.55.6下载适合的版本</a></p>
+
+<p>安装完成后cmd输入hugo version来验证hugo版本</p>
+
+<p>添加环境变量puch</p>
+
+<h2 id="用hugo来生成博客">用Hugo来生成博客</h2>
+
+<pre><code>hugo new site myblog  #建立myblog文件夹来储存
 </code></pre>
 
-<p>打开新建的<code>newblog.md</code>，编辑blog内容。</p>
+<h2 id="下载并设置主题">下载并设置主题</h2>
 
-<h2 id="检查内容">检查内容</h2>
+<p>cd进入博客根目录</p>
 
-<p>cd 到blog根目录，然后输入以下命令：</p>
-
-<pre><code>hugo server -D
+<pre><code>$ git clone https://github.com/imzeuk/hugo-theme-zozo themes/zozo
 </code></pre>
 
-<h2 id="更新public静态页面">更新public静态页面</h2>
+<p>主题最好与下载的hugo版本想匹配，不然后期配置会出错</p>
 
-<p>先cd到blog根目录，然后输入以下命令：</p>
+<h2 id="在本地启动博客">在本地启动博客</h2>
 
-<pre><code>hugo -D
+<pre><code>hugo server -t zozo --buildDrafts
+hugo server #查看服务器
 </code></pre>
 
-<h2 id="推送更新内容">推送更新内容</h2>
+<p>启动完成便可以用<a href="http://localhost:1313/来查看">http://localhost:1313/来查看</a></p>
 
-<p>cd到public目录下，然后输入以下命令：</p>
+<h2 id="新建一篇文章">新建一篇文章</h2>
 
-<pre><code>git add -A # 将public的所有更新内容添加到git暂存区 `
+<pre><code>hugo new posts/blog.md #在post文件夹下新建一篇文章，文章的标签 draft需要设置为false
 
-git commit -m &quot;我的第二次提交&quot; # 将暂存区文件提交到当前分支 
-
-git push -u origin master # 将本地版本库推到github的版本库（repository）`
+hugo server -t zozo --buildDrafts
 </code></pre>
 
-<h2 id="总结">总结</h2>
+<h2 id="个人博客部署到github">个人博客部署到GitHub</h2>
 
-<p>往基于github的Hugo静态博客推送新博文的步骤分为以下几步：</p>
+<p>新建仓库，名称必须为自己的用户名+github.io</p>
 
-<ol>
-<li>用hugo new命令新建md文件</li>
-<li>用hugo -D 生成public html 文件</li>
-<li>前往public目录</li>
-<li>用git add -A命令将全部更新的文件添加到暂存区</li>
-<li>用git commit 命令将暂存区内容添加到分支</li>
-<li>用git push 命令将分支内容推到github上去</li>
-</ol>
+<pre><code>hugo --theme=zozo --baseUrl=&quot;https://learnsss.github.io&quot; --buildDrafts
+
+cd进入public 文件夹
+
+git init
+
+git add .
+
+git commit -m&quot;first&quot;
+
+git remote add origin https://github.com/learnsss/learnsss.github.io.git 
+
+git push -u origin master
+
+
+</code></pre>
 </div>
         <div class="post_footer">
           
