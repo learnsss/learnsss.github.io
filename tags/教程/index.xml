@@ -6,10 +6,19 @@
     <description>Recent content in 教程 on 书为心印</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Sun, 17 May 2020 09:37:03 +0800</lastBuildDate>
+    <lastBuildDate>Mon, 18 May 2020 18:00:44 +0800</lastBuildDate>
     
 	<atom:link href="https://learnsss.github.io/tags/%E6%95%99%E7%A8%8B/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>上传Github</title>
+      <link>https://learnsss.github.io/posts/%E4%B8%8A%E4%BC%A0github/</link>
+      <pubDate>Mon, 18 May 2020 18:00:44 +0800</pubDate>
+      
+      <guid>https://learnsss.github.io/posts/%E4%B8%8A%E4%BC%A0github/</guid>
+      <description>第一步：建立git仓库 cd到你的本地项目根目录下，执行git命令，此命令会在当前目录下创建一个git文件夹 git init 第二步：将项目的所有文件添加到仓库中 git add . 这个命令会把当前路径下的所有文件，添加到待上传的</description>
+    </item>
     
     <item>
       <title>Hugo配置</title>
